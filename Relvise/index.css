@@ -37,18 +37,16 @@ html,body {
 }
 
 
-/*HEADER*/
 .header {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
 
-    z-index: 2;
+    z-index: 20;
 }
 
 .header__container {
-    width: 100%;
     display: flex;
     align-items: center;
     min-height: 104px;
@@ -124,13 +122,13 @@ html,body {
 }
 
 .head__body {
-    padding: 184px 0 0 0;
+    padding: 184px 0 191px 0;
     position: relative;
     z-index: 2;
     max-width: 509px;
 }
-.head__body > *:not(:last-child){
-    margin: 0;
+.head__body > *:not(:first-child){
+    margin: 35px 0 0 0;
 }
 
 .head__title {
@@ -140,10 +138,52 @@ html,body {
 }
 
 .head__text {
+    color: #737373;
+    max-width: 320px;
+    font-size: 20px;
+    line-height: 137%;
 }
 
 .head__buttons {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+.head__buttons > * {
+    box-sizing: content-box;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 10px 36px;
+    font-weight: bold;
+    border: 1px solid #0D5C63;
+    color: #0D5C63;
+
+}
+
+
+@media (max-width: 391px) {
+    .head__buttons > * {
+        flex: 1 1 100%;
+    }
+}
+@media (min-width: 392px) {
+    .head__buttons > *:first-child {
+        margin-right: 10px;
+    }
+}
+
+
+.head__buttons a {
+    text-decoration: none;
+}
+
+.active_btn {
+    background: #FF7B47;
+    color: white;
+    border: 1px solid transparent;
+}
+
 
 .background {
     position: absolute;
@@ -153,8 +193,6 @@ html,body {
     height: 100%;
 }
 
-._ibg {
-}
 
 
 

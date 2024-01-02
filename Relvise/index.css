@@ -10,6 +10,7 @@ ul,ol {
 html,body {
     height: 100%;
     color: #252B42;
+    background: #FAFAFA;
 }
 
 .wrapper {
@@ -193,7 +194,72 @@ html,body {
     height: 100%;
 }
 
+/*SERVICE PAGE*/
+.service {
+    position: relative;
+    z-index: 10;
+}
 
+.service__container {
+    margin-top: -120px;
+}
+
+.service__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.service__row > * {
+    flex: 1 1 33.3333%;
+    padding: 0 15px;
+}
+
+@media (max-width: 796px) {
+    .service__row > *:not(:last-child) {
+        flex: 1 1 50%;
+    }
+    .service__row > *:last-child{
+        flex: 1 1 100%;
+    }
+    
+}
+@media (max-width: 602px) {
+    .service__row > *:not(:last-child) {
+        flex: 1 1 100%;
+    }
+}
+
+.service__column {
+    margin-top: 10px;
+}
+
+.service__item {
+    padding: 35px 40px;
+    background: #FFFFFF;
+    height: 100%;
+}
+
+.service_item__icon {
+    margin-bottom: 10px;
+}
+
+.service_item__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.service_item__title {
+    font-size: 24px;
+    line-height: 125%;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+}
+
+.service_text__body {
+    color: #737373;
+}
 
 
 .footer {

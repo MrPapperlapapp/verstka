@@ -238,10 +238,27 @@ html,body {
     padding: 35px 40px;
     background: #FFFFFF;
     height: 100%;
+    cursor: pointer;
+    color: #737373;
 }
+.service__item h3 {
+    color: black;
+}
+.service__item:hover {
+    background: #0D5C63;
+    color: white;
+}
+.service__item:hover h3{
+    color: white;
+}
+
+
+
+
 
 .service_item__icon {
     margin-bottom: 10px;
+    fill: white;
 }
 
 .service_item__body {
@@ -255,10 +272,11 @@ html,body {
     font-weight: bold;
     letter-spacing: 0.1px;
     margin-bottom: 10px;
+    color: inherit;
 }
 
 .service_text__body {
-    color: #737373;
+    color: inherit;
 }
 
 

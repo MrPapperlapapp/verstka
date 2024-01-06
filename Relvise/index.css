@@ -251,6 +251,10 @@ html,body {
 .service__item:hover h3{
     color: white;
 }
+.service__item:hover svg{
+    color: white;
+}
+
 
 
 
@@ -258,7 +262,13 @@ html,body {
 
 .service_item__icon {
     margin-bottom: 10px;
-    fill: white;
+
+}
+.service_item__icon svg{
+    color: #0D5C63;
+}
+.service_item__icon:hover svg{
+    color: white;
 }
 
 .service_item__body {
@@ -279,6 +289,71 @@ html,body {
     color: inherit;
 }
 
+/*PAGE Experience */
+.experience {
+    padding: 80px 0 0 0;
+}
+
+.experience__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__title {
+    margin: 0 auto 50px auto;
+}
+
+.experience__head {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.experience__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.experience__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+
+.experience__column {
+    flex: 1 1 25%;
+    padding: 0 18px;
+}
+
+.experience__item {
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+}
+.experience__item svg{
+    width: 48px;
+    height: 48px;
+    color: #0D5C63;
+}
+
+.experience_item__value {
+    margin: 12px 0;
+}
+
+.experience_item__text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
 
 .footer {
 

@@ -361,6 +361,7 @@ html,body {
 
 /*practice page*/
 .practice {
+    padding: 0 0 80px 0;
 }
 
 .practice__container {
@@ -411,6 +412,90 @@ html,body {
 }
 
 
+/*advertising page*/
+.advertising {
+    background: white;
+}
+
+.advertising__container {
+
+}
+
+.advertising__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertising__video {
+}
+
+.advertising__img {
+}
+
+.advertising__description {
+
+}
+
+.advertising__description  h2{
+    margin-top: 20px;
+}
+.advertising__description  p{
+    margin-bottom: 20px;
+}
+
+.advertising_description__title {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.advertising_description__text {
+    color: #737373;
+    font-size: 14px;
+    line-height: 142%;
+}
+
+.advertising_description__list {
+}
+
+.advertising_description__item {
+    position: relative;
+    padding-left: 40px;
+}
+.advertising_description__item:before {
+    content: '';
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url("./img/advertising_icon1.svg");
+}
+.advertising_description__item2 {
+    position: relative;
+    padding-left: 40px;
+}
+.advertising_description__item2:before {
+    content: '';
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url("./img/advertising_icon2.svg");
+}
+.advertising_description_item__title {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.advertising_description_item__sub {
+    font-size: 14px;
+    line-height: 171%;
+    color: #737373;
+}
 
 .footer {
 
